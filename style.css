@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "PeachesandCreamRegularW00"; src: url(assets/fonts/Peaches\ and\ Cream\ Regular\ W00.woff);
+}
+:root {
+    --main-bg-color:#ffffff;
+    --details-golden-color:#b99867;
+    --detais-blue-color:#294057;
+    --main-font:'Open Sans', sans-serif;
+    --secundary-font:"PeachesandCreamRegularW00";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-color: var(--main-bg-color);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 1px 1px 1px 1px rgb(233, 224, 224);
+}
+#logo {
+    width: 43vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#maintextlogo {
+    font-family: var(--secundary-font);
+    font-size: 5.8vw;
+    font-weight: 200;
+    opacity: 0.9;
+    color: var(--detais-blue-color);
+}
+#asidelogo {
+    font-family: var(--main-font);
+    font-size: 2.5vh;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: var(--details-golden-color);
+}
+nav {
+   
+}
+nav a {
+    width: 70vw;
+    font-family: var(--main-font);
+    text-decoration: none;
+    font-size: 2.5vh;
+    padding: 2.5vw;
+    color: var(--detais-blue-color);
+    transition: 0.5s ease-in-out;
+}
+nav a:hover {
+    color: var(--details-golden-color);
+    transition: 0.5s ease-in-out;
+}
+.car {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 10vw;
+    height: 7vw;
+    background-color: var(--detais-blue-color);
+    gap: 1vw;
+}
+.car img {
+    width: 3vw;
+}
+#textcarrinho { 
+    font-size: 2.5vh;
+    font-family: var(--main-font);
+    color: var(--main-bg-color);
+}
+
+/* Página Principal */
+#paralaximgbike {
+    background-repeat: space;
+    background-image: url(assets/imgs/mainbike\ \(2\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.newproducts {
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.newproducts h1 {
+    font-family: var(--main-font); 
+    color:var(--detais-blue-color);
+    font-weight: 400;
+    font-size:7vh;
+    letter-spacing: 4px;
+}
+#btnewproducts {
+    width: 16vw;
+    height: 8vh;
+    background-color: var(--main-bg-color);
+    border: solid 2px;
+    border-color: var(--detais-blue-color);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 2.5vh;
+    color: var(--details-golden-color);
+    transition: 0.4s ease-in-out;
+}
+#btnewproducts:hover {
+    background-color: var(--detais-blue-color);
+    color: var(--main-bg-color);
+    transition: 0.4s ease-in-out;
+}
+#assessments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--detais-blue-color);
+    width: 100vw;
+    height: 38vh;
+}
+#assessments p {
+    width: 60vw;
+    font-size: 4vh;
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--main-bg-color);
+}
+.quotationmarks {
+    font-size: 7vh;
+    color: var(--details-golden-color);
+}
+/* QUEM SOMOS */
+#who_we_are {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+#leftwho_we_are {
+    display: flex;
+    width: 50vw;
+    padding-left: 15vw;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vw;
+}
+    #leftwho_we_are h1 {
+    font-family: var(--main-font);
+    color: var(--details-golden-color);
+    font-size:7vh;
+    letter-spacing: 0.5vw;
+    font-weight: 400;
+}
+#leftwho_we_are p {
+    width: 28vw;
+    font-size: 2.4vh;
+    font-family: var(--main-font);
+    color: var(--detais-blue-color);
+} 
+#btnwho_we_are {
+    width: 12vw;
+    height: 8vh;
+    background-color: var(--main-bg-color);
+    border: solid 2px;
+    border-color: var(--detais-blue-color);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 2.5vh;
+    color: var(--details-golden-color);
+    transition: 0.4s ease-in-out;
+}
+#btnwho_we_are:hover{
+    background-color: var(--detais-blue-color);
+    color: var(--main-bg-color);
+    transition: 0.4s ease-in-out;
+}
+/* PEDALE COM ESTILO */
+#pedal {
+    display: flex;
+}
+#rightpedal {
+    display: flex;
+    width: 50vw;
+    padding-left: 10vw;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vw;
+}
+#rightpedal h1 {
+    font-family: var(--main-font);
+    color: var(--detais-blue-color);
+    font-size:7vh;
+    letter-spacing: 0.5vw;
+    font-weight: 400;
+}
+#rightpedal p {
+    width: 28vw;
+    font-size: 2.4vh;
+    font-family: var(--main-font);
+    color: var(--detais-blue-color);
+} 
+#btnpedal {
+    width: 18vw;
+    height: 8vh;
+    background-color: var(--main-bg-color);
+    border: solid 2px;
+    border-color: var(--details-golden-color);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 2.5vh;
+    color: var(--detais-blue-color);
+    transition: 0.4s ease-in-out;
+}
+#btnpedal:hover{
+    background-color: var(--details-golden-color);
+    color: var(--main-bg-color);
+    transition: 0.4s ease-in-out;
+}
+/* Social Media */
+#socialmedia {
+    width: 100vw;
+    height: 8vw;
+    background-color: var(--details-golden-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+}
+#socialmedia img {
+    width: 6vh;
+    cursor: pointer;
+}
+/* News Letter */
+#newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--detais-blue-color);
+    width: 100vw;
+    height: 70vh;
+}
+#newsletterdiv {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#newsletter h3 {
+    font-family: var(--main-font);
+    color: var(--main-bg-color);
+    font-size: 2.3vh;
+    font-weight: 400;
+}
+#newsletter button {
+    height: 8vh;
+    background-color: var(--main-bg-color);
+    border: solid 2px;
+    border-color: var(--details-golden-color);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 2.5vh;
+    color: var(--detais-blue-color);
+    transition: 0.4s ease-in-out;
+}
+#newsletterdiv input {
+    height: 6vh;
+    background-color: var(--detais-blue-color);
+    border: solid 1px var(--main-bg-color);
+}
+#newsletterdiv input::placeholder {
+    font-family: var(--main-font);
+    color:var(--main-bg-color);
+    padding:1vw;
+}
+
+#newsletter button:hover{
+    background-color: var(--details-golden-color);
+    color: var(--main-bg-color);
+    transition: 0.4s ease-in-out;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2vw;
+}
